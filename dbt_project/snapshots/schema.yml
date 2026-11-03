@@ -1,0 +1,8 @@
+version: 2
+
+snapshots:
+  - name: driver_snapshot
+    description: "Historique des notes chauffeurs (SCD type 2)"
+    columns:
+      - name: dbt_scd_id
+        data_tests: [unique, not_null]

@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_drivers
+    description: "Chauffeurs, renommés et typés"
+    columns:
+      - name: driver_id
+        data_tests: [unique, not_null]
+  - name: stg_vehicles
+    description: "Véhicules, un par chauffeur"
+    columns:
+      - name: vehicle_id
+        data_tests: [unique, not_null]
+  - name: stg_zones
+    description: "Zones de prise en charge et de dépose"
+    columns:
+      - name: zone_id
+        data_tests: [unique, not_null]
+  - name: stg_ride_events
+    description: "Courses filtrées sur var('start_date')"
+    columns:
+      - name: ride_id
+        data_tests: [unique, not_null]
