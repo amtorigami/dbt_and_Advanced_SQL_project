@@ -1,6 +1,6 @@
 # InDrive Analytics avec dbt
 
-Ce projet transforme les données brutes d'une application de VTC (InDrive) en un star schema dans PostgreSQL, avec dbt. Les modèles sont testés et documentés, et le projet utilise les principaux outils de dbt : sources, snapshot, modèle incrémental, macro, variable et window functions.
+Ce projet transforme les données brutes d'une application de VTC (InDrive) en un star schema dans PostgreSQL, avec dbt. Les modèles sont testés et documentés, et le projet utilise les principaux outils de dbt : sources, snapshot, modèle incrémental, macro, variable et window functions. En bonus, un dashboard Streamlit permet de visualiser les résultats.
 
 ## Données sources et Règles métiers
 
