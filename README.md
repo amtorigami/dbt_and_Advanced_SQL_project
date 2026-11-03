@@ -127,3 +127,16 @@ Oui, il apparaît entre les sources et `fact_rides`, même s'il est éphémère.
 ## Ce que j'en retiens
 
 J'ai vu deux pièges en vrai : un modèle incrémental ne corrige pas son passé tout seul, et un INNER JOIN peut cacher une erreur au lieu de la faire échouer. Un test qui échoue au bon endroit rassure plus qu'un test qui passe tout le temps.
+
+## Dashboard Streamlit
+
+En bonus, un petit dashboard lit les marts dbt dans Postgres et affiche le cumul des gains par chauffeur, le classement d'un jour, les gains par zone de départ et les courses par tranche de note.
+
+```bash
+pip install -r streamlit_app/requirements.txt
+streamlit run streamlit_app/app.py
+```
+
+![Dashboard, partie haute](docs/dashboard_haut.png)
+
+![Dashboard, partie basse](docs/dashboard_bas.png)
